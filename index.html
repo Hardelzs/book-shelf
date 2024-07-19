@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Storer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="header-div">
+        <div class="input-div">
+          <label for="book-title" class="input-label">Book Title</label>
+          <input
+            type="text"
+            name="book-title"
+            id="book-title"
+            class="input-text"
+            placeholder="Enter the name of a book...."
+            required
+            autocomplete="none"
+            maxlength="25"
+          />
+        </div>
+        <div class="input-div">
+          <label for="book-author" class="input-label">Book Author</label>
+          <input
+            type="text"
+            name="book-author"
+            id="book-author"
+            class="input-text"
+            placeholder="Enter the author..."
+            required
+            autocomplete="none"
+            maxlength="20"
+          />
+        </div>
+        <div class="input-div">
+          <label for="book-publish" class="input-label"
+            >Book Publish Year</label
+          >
+          <input
+            type="text"
+            name="book-publish"
+            class="input-text"
+            id="book-publish"
+            placeholder="Enter the publish year..."
+            required
+            autocomplete="none"
+            maxlength="5"
+          />
+        </div>
+        <button type="submit" class="button">Add Book</button>
+        <div class="input-div">
+          <label for="search button" class="input-label">Search button</label>
+          <input
+            type="search"
+            name="search-button"
+            id="searchInput"
+            class="input-text"
+            placeholder="Search"
+            required
+            autocomplete="none"
+          />
+        </div>
+        <button type="submit" class="btn" ><img src="images/pngwing.com.png" alt="" width="20px" height="20px"></button>
+      </div>
+      <div class="main-container">
+        <table>
+          <thead>
+            <th> Book Title</th>
+            <th>Book Author</th>
+            <th>Publish Date</th>
+            <!-- <th>Delete button</th> -->
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Interpreter</td>
+              <td>Wole Soyinka</td>
+              <td>1965</td>
+              <!-- <td> <img src="deletebutton.svg" alt="" width="5%" height="10%"></td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="popup">
+        <div class="word">
+          <p>Please Enter Required Word</p>
+          <button id="btn">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

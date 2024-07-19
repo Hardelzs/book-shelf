@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.header-div {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 4.8rem 0;
+}
+
+.input-div {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-label {
+  font-size: 1.2rem;
+}
+
+.input-text {
+  font-size: 1.6rem;
+  padding: 0.6rem 1.2rem;
+  outline: none;
+  border: none;
+  border-bottom: 4px solid #1b1b1b;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.input-text:focus {
+  border-bottom: 4px solid #a020f0;
+}
+
+/* Javascript */
+.required-text:focus {
+  border-bottom: 3px solid green;
+}
+
+.button {
+  margin-bottom: 4px;
+  display: block;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #a020f0;
+  color: #1b1b1b;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.btn {
+  position: absolute;
+  margin-bottom: 1px;
+  display: block;
+  padding: 0.6rem 1.2rem;
+  right: 186px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #a020f0;
+  color: #1b1b1b;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translateY(3px) scale(0.95);
+}
+
+.main-container {
+  display: block;
+  margin: 3.4rem;
+  width: 50%;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  max-height: 70%;
+}
+
+thead {
+  background-color: #a020f0;
+  color: #1b1b1b;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+th {
+  background-color: #a020f0;
+  color: #1b1b1b;
+}
+tbody {
+  font-size: 1.2rem;
+}
+
+tr {
+  height: 3.6rem;
+}
+
+tr:hover {
+  background-color: #2b2b2b;
+}
+
+td {
+  padding: 1.2rem;
+}
+/* // this are where you need to change  */
+#popup {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  opacity: 0.8;
+}
+.word {
+  margin-top: 10%;
+  width: 30%;
+  height: 30%;
+  background: white;
+  color: black;
+  margin-left: 35%;
+  border-radius: 30px;
+  transition: 9s;
+}
+.word p {
+  position: absolute;
+  margin-left: 90px;
+  font-size: 20px;
+  margin-top: 4%;
+}
+.word button {
+  position: absolute;
+  margin-top: 10%;
+  padding: 12px;
+  margin-left: 24%;
+  width: 80px;
+  border-radius: 20px;
+  border: none;
+  background: #a020f0;
+  /* border: #1b1b1b 2px solid; */
+  border: none;
+}
+.word button:hover {
+  border: #1b1b1b 1px solid;
+}
